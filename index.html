@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Build a Website</title>
+    <meta
+      name="description"
+      content="A simple workshop handbook for building and publishing a personal website with HTML, CSS, JavaScript, VS Code, and GitHub Pages."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero" id="top">
+        <nav class="top-nav">
+          <a class="brand" href="#top">Workshop Handbook</a>
+          <div class="nav-links">
+            <a href="#before">Before You Start</a>
+            <a href="#steps">Steps</a>
+            <a href="#prompts">Prompts</a>
+            <a href="#publish">Publish</a>
+            <a href="#help">Help</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="eyebrow">Thursday, March 19, 2026 · 19:00</p>
+            <h1>How to Build a Website</h1>
+            <p class="lead">
+              A simple guide for artists, beginners, and anyone who wants to
+              build a personal website from scratch and publish it on GitHub
+              Pages.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#steps">Start the workshop</a>
+              <a class="button button-secondary" href="#before">What to prepare</a>
+            </div>
+          </section>
+
+          <aside class="hero-card">
+            <h2>What you will make</h2>
+            <ul class="check-list">
+              <li>A simple personal website</li>
+              <li>An online project or portfolio page</li>
+              <li>A public GitHub repository</li>
+              <li>A live website on GitHub Pages</li>
+            </ul>
+            <div class="progress-panel">
+              <p class="progress-label">Workshop progress</p>
+              <div class="progress-bar" aria-hidden="true">
+                <span id="progress-fill"></span>
+              </div>
+              <p id="progress-text">0 of 8 steps completed</p>
+            </div>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <section class="section intro">
+          <div class="section-heading">
+            <p class="section-kicker">The goal</p>
+            <h2>Keep it simple. Finish something real.</h2>
+          </div>
+          <div class="intro-grid">
+            <article class="info-card">
+              <h3>This workshop is for beginners</h3>
+              <p>
+                You do not need coding experience. We will use plain HTML, CSS,
+                and a little JavaScript. We will also use the AI chat tool
+                available in your VS Code to help us write, edit, and improve
+                the website.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>A good first project</h3>
+              <p>
+                Build one small site with clear content: your name, a short
+                bio, one image, contact information, and 3 to 6 projects or
+                references.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Done is better than perfect</h3>
+              <p>
+                Your first version can be simple. A clean one-page website is a
+                great result. You can always improve it later.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Publish early, then improve</h3>
+              <p>
+                Try to get a very small version online early in the workshop.
+                After that, use local preview in VS Code for fast changes and
+                push new updates at a few checkpoints.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="before">
+          <div class="section-heading">
+            <p class="section-kicker">Before you start</p>
+            <h2>Bring these things and keep setup light</h2>
+          </div>
+          <div class="two-column">
+            <article class="panel">
+              <h3>Checklist</h3>
+              <ol class="number-list">
+                <li>Bring your laptop and charger.</li>
+                <li>Install <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">VS Code</a>.</li>
+                <li>Install <a href="https://git-scm.com/downloads" target="_blank" rel="noreferrer">Git</a> if it is not already on your computer.</li>
+                <li>Optional but useful: install a VS Code local preview extension with a <code>Go Live</code> button.</li>
+                <li>Create a <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub account</a>.</li>
+                <li>Sign in to GitHub inside VS Code if possible.</li>
+                <li>Collect your materials in one folder: text, images, links, project titles.</li>
+              </ol>
+            </article>
+            <article class="panel">
+              <h3>Prepare your content</h3>
+              <ul class="plain-list">
+                <li>Your name or artist name</li>
+                <li>One short introduction, 3 to 5 sentences</li>
+                <li>Project titles and short descriptions</li>
+                <li>Links: Instagram, email, website, CV, event page</li>
+                <li>2 to 8 images you are allowed to publish</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="steps">
+          <div class="section-heading">
+            <p class="section-kicker">Workshop flow</p>
+            <h2>Follow these steps in order</h2>
+          </div>
+
+          <div class="steps">
+            <article class="step-card" data-step>
+              <div class="step-top">
+                <p class="step-number">Step 1</p>
+                <label class="step-check">
+                  <input type="checkbox" data-step-checkbox />
+                  <span>Done</span>
+                </label>
+              </div>
+              <h3>Choose one clear website idea</h3>
+              <p>
+                Pick a small first version. Examples: personal homepage,
+                portfolio, artist page, event page, studio page, or project
+                archive.
+              </p>
+              <p class="prompt-label">Ask your AI chat in VS Code:</p>
+              <p class="prompt-box">
+                Help me plan a simple one-page website for my [portfolio /
+                project / event]. I am a beginner. Suggest 5 sections and keep
+                the structure very simple.
+              </p>
+            </article>
+
+            <article class="step-card" data-step>
+              <div class="step-top">
+                <p class="step-number">Step 2</p>
+                <label class="step-check">
+                  <input type="checkbox" data-step-checkbox />
+                  <span>Done</span>
+                </label>
+              </div>
+              <h3>Create your project folder</h3>
+              <p>
+                In VS Code, create a new folder for your site. Add these files:
+                <code>index.html</code>, <code>styles.css</code>, and
+                <code>script.js</code>.
+              </p>
+              <div class="snippet-card">
+                <div class="snippet-header">
+                  <h4>Starter file list</h4>
+                  <button class="copy-button" data-copy-target="starter-files">
+                    Copy
+                  </button>
+                </div>
+                <pre id="starter-files"><code>index.html
+styles.css
+script.js
+images/</code></pre>
+              </div>
+            </article>
+
+            <article class="step-card" data-step>
+              <div class="step-top">
+                <p class="step-number">Step 3</p>
+                <label class="step-check">
+                  <input type="checkbox" data-step-checkbox />
+                  <span>Done</span>
+                </label>
+              </div>
+              <h3>Build a tiny first page with HTML</h3>
+              <p>
+                Start with the smallest possible version: your name, one short
+                sentence, and one contact link. This is enough for a first live
+                website.
+              </p>
+              <p class="prompt-label">Ask your AI chat in VS Code:</p>
+              <p class="prompt-box">
+                Create a very simple <code>index.html</code> for a one-page
+                personal website. Start with only a headline, short intro, and
+                contact link. Keep it extremely simple because I am a beginner.
+              </p>
+              <div class="snippet-card">
+                <div class="snippet-header">
+                  <h4>Simple HTML skeleton</h4>
+                  <button class="copy-button" data-copy-target="html-skeleton">
+                    Copy
+                  </button>
+                </div>
+                <pre id="html-skeleton"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;Your Name&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Your Name&lt;/h1&gt;
+      &lt;p&gt;One short sentence about your work.&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+      &lt;section&gt;
+        &lt;h2&gt;About&lt;/h2&gt;
+        &lt;p&gt;Write a short introduction here.&lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section&gt;
+        &lt;h2&gt;Projects&lt;/h2&gt;
+        &lt;p&gt;Add your projects here.&lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section&gt;
+        &lt;h2&gt;Contact&lt;/h2&gt;
+        &lt;p&gt;Add email or social links here.&lt;/p&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+              </div>
+            </article>
+
+            <article class="step-card" data-step>
+              <div class="step-top">
+                <p class="step-number">Step 4</p>
+                <label class="step-check">
+                  <input type="checkbox" data-step-checkbox />
+                  <span>Done</span>
+                </label>
+              </div>
+              <h3>Publish this first version to GitHub</h3>
+              <p>
+                Create a public repository on GitHub. In VS Code, publish your
+                folder to that repository or use the Source Control panel to
+                commit and push your files.
+              </p>
+              <ol class="number-list compact">
+                <li>Create a new public repository on GitHub.</li>
+                <li>Commit your files in VS Code.</li>
+                <li>Push them to GitHub.</li>
+              </ol>
+              <p class="tip">
+                This first push can be very small. The goal is to get online
+                early, not to be finished.
+              </p>
+            </article>
+
+            <article class="step-card" data-step>
+              <div class="step-top">
+                <p class="step-number">Step 5</p>
+                <label class="step-check">
+                  <input type="checkbox" data-step-checkbox />
+                  <span>Done</span>
+                </label>
+              </div>
+              <h3>Turn on GitHub Pages</h3>
+              <p>
+                Open your repository on GitHub. Go to
+                <code>Settings → Pages</code>. Under
+                <code>Build and deployment</code>, choose
+                <code>Deploy from a branch</code>, then select your main branch
+                and the root folder.
+              </p>
+              <p class="tip">
+                After a short wait, your site will be live at a GitHub Pages
+                URL, usually
+                <code>https://yourusername.github.io/your-repository-name/</code>.
+              </p>
+            </article>
+
+            <article class="step-card" data-step>
+              <div class="step-top">
+                <p class="step-number">Step 6</p>
+                <label class="step-check">
+                  <input type="checkbox" data-step-checkbox />
+                  <span>Done</span>
+                </label>
+              </div>
+              <h3>Use Go Live for fast local preview</h3>
+              <p>
+                After your site is online, do most of your editing locally in
+                VS Code with a local preview or <code>Go Live</code> tool. This
+                lets you see changes immediately without waiting for GitHub
+                Pages each time.
+              </p>
+              <p class="tip">
+                Important: local preview is only on your laptop. GitHub Pages
+                is the public website.
+              </p>
+            </article>
+
+            <article class="step-card" data-step>
+              <div class="step-top">
+                <p class="step-number">Step 7</p>
+                <label class="step-check">
+                  <input type="checkbox" data-step-checkbox />
+                  <span>Done</span>
+                </label>
+              </div>
+              <h3>Add your real content and style</h3>
+              <p>
+                Now replace all placeholder text. Add your own words, project
+                titles, descriptions, links, spacing, colors, and fonts. Keep
+                sentences short and clear.
+              </p>
+              <p class="prompt-label">Ask your AI chat in VS Code:</p>
+              <p class="prompt-box">
+                Help me improve my website step by step. First add my real
+                content, then write simple CSS to make it clean, readable, and
+                mobile-friendly. Keep everything easy to understand because I am
+                a beginner.
+              </p>
+            </article>
+
+            <article class="step-card" data-step>
+              <div class="step-top">
+                <p class="step-number">Step 8</p>
+                <label class="step-check">
+                  <input type="checkbox" data-step-checkbox />
+                  <span>Done</span>
+                </label>
+              </div>
+              <h3>Push updates at checkpoints</h3>
+              <p>
+                Push your work after important milestones: after adding the
+                basic content, after adding images, and once more before the end
+                of the workshop.
+              </p>
+              <p class="prompt-label">Ask your AI chat in VS Code:</p>
+              <p class="prompt-box">
+                Help me add a responsive image gallery or project section to my
+                existing site. Keep it simple and tell me what to push to
+                GitHub after I test it locally.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="prompts">
+          <div class="section-heading">
+            <p class="section-kicker">Prompting tips</p>
+            <h2>How to work well with AI in VS Code</h2>
+          </div>
+          <div class="two-column">
+            <article class="panel">
+              <h3>Good prompt habits</h3>
+              <ul class="plain-list">
+                <li>Say that you are a beginner.</li>
+                <li>Ask for one small change at a time.</li>
+                <li>Paste the code you want to change.</li>
+                <li>Ask the AI to explain what it changed.</li>
+                <li>Test locally first, then push when the change works.</li>
+                <li>Use words like simple, clean, clear, mobile-friendly.</li>
+              </ul>
+            </article>
+            <article class="panel">
+              <h3>Prompt examples</h3>
+              <div class="snippet-card short">
+                <div class="snippet-header">
+                  <h4>Useful prompts</h4>
+                  <button class="copy-button" data-copy-target="prompt-examples">
+                    Copy
+                  </button>
+                </div>
+                <pre id="prompt-examples"><code>I am a beginner. Please improve this HTML, but keep it simple.
+
+Explain this CSS in plain English.
+
+Make this layout work better on mobile screens.
+
+Add a project card section with image, title, year, and short text.
+
+Check my code for mistakes and tell me what to fix first.</code></pre>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="publish">
+          <div class="section-heading">
+            <p class="section-kicker">Publishing</p>
+            <h2>Final checklist for GitHub Pages</h2>
+          </div>
+          <article class="panel full-width">
+            <ol class="number-list">
+              <li>Your homepage file is named <code>index.html</code>.</li>
+              <li>Your repository is public.</li>
+              <li>Your files are pushed to the default branch.</li>
+              <li>GitHub Pages is enabled in repository settings.</li>
+              <li>You preview locally with <code>Go Live</code> or another local server while editing.</li>
+              <li>You wait 1 to 5 minutes after publishing.</li>
+              <li>You test the live link on your phone.</li>
+            </ol>
+          </article>
+        </section>
+
+        <section class="section" id="help">
+          <div class="section-heading">
+            <p class="section-kicker">When something breaks</p>
+            <h2>Simple troubleshooting</h2>
+          </div>
+          <div class="intro-grid">
+            <article class="info-card">
+              <h3>The CSS does not load</h3>
+              <p>
+                Check the filename. It must match exactly:
+                <code>styles.css</code>. Also check that the link in your HTML
+                is correct.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>The image does not appear</h3>
+              <p>
+                Check the image path, filename, and letter case. Put the image
+                in the correct folder and make sure the extension matches.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Go Live works, but the public site does not change</h3>
+              <p>
+                This usually means you changed the local files but did not push
+                the new version to GitHub yet. Local preview and GitHub Pages
+                are not the same thing.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>GitHub Pages is not live yet</h3>
+              <p>
+                Wait a few minutes, then refresh the page. If it still does not
+                work, check <code>Settings → Pages</code> again.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>You feel stuck</h3>
+              <p>
+                Go back one step. Ask the AI chat tool to explain the current
+                code in simple words. Then make one small change, not five at
+                once.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Build a simple first version. Improve it later.</p>
+        <a href="#top">Back to top</a>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
