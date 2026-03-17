@@ -102,6 +102,12 @@ a {
   margin-top: 44px;
 }
 
+.hero-aside {
+  display: grid;
+  gap: 18px;
+  align-self: stretch;
+}
+
 .eyebrow,
 .section-kicker,
 .step-number,
@@ -203,6 +209,64 @@ li {
   display: grid;
   gap: 18px;
   align-self: end;
+}
+
+.hero-photo-card {
+  position: relative;
+  min-height: 360px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 30px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: #d9d0c2;
+}
+
+.hero-photo-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.hero-photo-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(20, 24, 30, 0.02) 25%, rgba(20, 24, 30, 0.58) 100%);
+}
+
+.hero-photo-caption {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 18px;
+  z-index: 1;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255, 250, 242, 0.78);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.hero-photo-kicker,
+.hero-photo-title {
+  margin: 0;
+}
+
+.hero-photo-kicker {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.hero-photo-title {
+  margin-top: 6px;
+  font-family: "Fraunces", serif;
+  font-size: 1.45rem;
 }
 
 .check-list,
@@ -441,5 +505,9 @@ code {
 
   .nav-links {
     justify-content: flex-start;
+  }
+
+  .hero-photo-card {
+    min-height: 280px;
   }
 }
