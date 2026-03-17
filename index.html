@@ -6,7 +6,7 @@
     <title>How to Build a Website</title>
     <meta
       name="description"
-      content="A simple workshop handbook for building and publishing a personal website with HTML, CSS, JavaScript, VS Code, and GitHub Pages."
+      content="A simple workshop handbook for building and publishing a personal website with HTML, CSS, JavaScript, VS Code, GitHub, coding agents, and GitHub Pages."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,8 +22,10 @@
         <nav class="top-nav">
           <a class="brand" href="#top">Workshop Handbook</a>
           <div class="nav-links">
+            <a href="#basics">Basics</a>
             <a href="#before">Before You Start</a>
             <a href="#steps">Steps</a>
+            <a href="#tools">Handy tools</a>
             <a href="#prompts">Prompts</a>
             <a href="#publish">Publish</a>
             <a href="#help">Help</a>
@@ -65,6 +67,37 @@
       </header>
 
       <main>
+        <section class="section" id="before">
+          <div class="section-heading">
+            <p class="section-kicker">Before you start</p>
+            <h2>Bring these things and keep setup light</h2>
+          </div>
+          <div class="two-column">
+            <article class="panel">
+              <h3>Checklist</h3>
+              <ol class="number-list">
+                <li>Bring your laptop and charger.</li>
+                <li>Install <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">VS Code</a>.</li>
+                <li>Install <a href="https://git-scm.com/downloads" target="_blank" rel="noreferrer">Git</a> if it is not already on your computer.</li>
+                <li>Optional but useful: install a VS Code local preview extension with a <code>Go Live</code> button.</li>
+                <li>Create a <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub account</a>.</li>
+                <li>Sign in to GitHub inside VS Code if possible.</li>
+                <li>Collect your materials in one folder: text, images, links, project titles.</li>
+              </ol>
+            </article>
+            <article class="panel">
+              <h3>Prepare your content</h3>
+              <ul class="plain-list">
+                <li>Your name or artist name</li>
+                <li>One short introduction, 3 to 5 sentences</li>
+                <li>Project titles and short descriptions</li>
+                <li>Links: Instagram, email, website, CV, event page</li>
+                <li>2 to 8 images you are allowed to publish</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
         <section class="section intro">
           <div class="section-heading">
             <p class="section-kicker">The goal</p>
@@ -106,33 +139,37 @@
           </div>
         </section>
 
-        <section class="section" id="before">
-          <div class="section-heading">
-            <p class="section-kicker">Before you start</p>
-            <h2>Bring these things and keep setup light</h2>
+        <section class="section" id="basics">
+          <div class="section-heading section-heading-wide">
+            <p class="section-kicker">Basics</p>
+            <h2>What GitHub, VS Code, and coding agents are</h2>
           </div>
-          <div class="two-column">
-            <article class="panel">
-              <h3>Checklist</h3>
-              <ol class="number-list">
-                <li>Bring your laptop and charger.</li>
-                <li>Install <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">VS Code</a>.</li>
-                <li>Install <a href="https://git-scm.com/downloads" target="_blank" rel="noreferrer">Git</a> if it is not already on your computer.</li>
-                <li>Optional but useful: install a VS Code local preview extension with a <code>Go Live</code> button.</li>
-                <li>Create a <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub account</a>.</li>
-                <li>Sign in to GitHub inside VS Code if possible.</li>
-                <li>Collect your materials in one folder: text, images, links, project titles.</li>
-              </ol>
+          <div class="intro-grid">
+            <article class="info-card">
+              <h3>What is GitHub?</h3>
+              <p>
+                GitHub is a website where you store your project files online.
+                It keeps a history of your changes, makes sharing easier, and
+                is also where you can publish your site with GitHub Pages.
+              </p>
             </article>
-            <article class="panel">
-              <h3>Prepare your content</h3>
-              <ul class="plain-list">
-                <li>Your name or artist name</li>
-                <li>One short introduction, 3 to 5 sentences</li>
-                <li>Project titles and short descriptions</li>
-                <li>Links: Instagram, email, website, CV, event page</li>
-                <li>2 to 8 images you are allowed to publish</li>
-              </ul>
+            <article class="info-card">
+              <h3>What is VS Code?</h3>
+              <p>
+                VS Code is the editor where you open your website folder and
+                work on your files. You can write HTML, CSS, and JavaScript,
+                preview changes locally, and use built-in Git tools to commit
+                and push your work.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>What are coding agents?</h3>
+              <p>
+                Coding agents are AI tools that can help you plan, write,
+                explain, and fix code. They are useful for small steps and
+                quick questions, but you should still read the changes, test
+                them, and ask for explanations when something is unclear.
+              </p>
             </article>
           </div>
         </section>
@@ -410,6 +447,69 @@ Add a project card section with image, title, year, and short text.
 
 Check my code for mistakes and tell me what to fix first.</code></pre>
               </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="tools">
+          <div class="section-heading section-heading-wide">
+            <p class="section-kicker">Handy tools</p>
+            <h2>Useful Figma tools for fonts, colors, text, and QR codes</h2>
+            <p class="section-intro">
+              These free browser tools from
+              <a href="https://www.figma.com/de-de/tools/" target="_blank" rel="noreferrer">Figma Tools</a>
+              are handy when you want quick help with styling, accessibility,
+              or simple website assets.
+            </p>
+          </div>
+          <div class="tool-grid">
+            <article class="panel tool-card">
+              <h3>Font Library</h3>
+              <p>
+                Explore fonts when you want a clearer headline and body-text
+                combination for your site.
+              </p>
+              <a class="button button-secondary" href="https://www.figma.com/fonts/" target="_blank" rel="noreferrer">Open tool</a>
+            </article>
+            <article class="panel tool-card">
+              <h3>Color Wheel</h3>
+              <p>
+                Build a small, balanced color palette if you are unsure which
+                colors work well together.
+              </p>
+              <a class="button button-secondary" href="https://www.figma.com/color-wheel/" target="_blank" rel="noreferrer">Open tool</a>
+            </article>
+            <article class="panel tool-card">
+              <h3>Image Color Picker</h3>
+              <p>
+                Upload a photo or artwork and pull colors from it to create a
+                palette that matches your own material.
+              </p>
+              <a class="button button-secondary" href="https://www.figma.com/color-picker/" target="_blank" rel="noreferrer">Open tool</a>
+            </article>
+            <article class="panel tool-card">
+              <h3>Color Contrast Checker</h3>
+              <p>
+                Test whether your text and background colors are readable and
+                easier to use for more people.
+              </p>
+              <a class="button button-secondary" href="https://www.figma.com/color-contrast-checker/" target="_blank" rel="noreferrer">Open tool</a>
+            </article>
+            <article class="panel tool-card">
+              <h3>QR Code Generator</h3>
+              <p>
+                Make a quick QR code for your website link, portfolio page,
+                poster, or exhibition handout.
+              </p>
+              <a class="button button-secondary" href="https://www.figma.com/qr-code-generator/" target="_blank" rel="noreferrer">Open tool</a>
+            </article>
+            <article class="panel tool-card">
+              <h3>Lorem Ipsum Generator</h3>
+              <p>
+                Create placeholder text when you want to test a layout before
+                your final writing is ready.
+              </p>
+              <a class="button button-secondary" href="https://www.figma.com/lorem-ipsum-generator/" target="_blank" rel="noreferrer">Open tool</a>
             </article>
           </div>
         </section>

@@ -226,14 +226,33 @@ li {
   max-width: 12ch;
 }
 
+.section-heading-wide h2 {
+  max-width: 18ch;
+}
+
+.section-intro {
+  max-width: 64ch;
+  margin: 14px 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
 .intro-grid,
-.two-column {
+.two-column,
+.tool-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
 
+.two-column {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .intro-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tool-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
@@ -357,6 +376,17 @@ code {
   max-width: 760px;
 }
 
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.tool-card .button {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
 .footer {
   display: flex;
   align-items: center;
@@ -380,7 +410,8 @@ code {
   .hero-grid,
   .steps,
   .intro-grid,
-  .two-column {
+  .two-column,
+  .tool-grid {
     grid-template-columns: 1fr;
   }
 
