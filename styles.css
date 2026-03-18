@@ -324,6 +324,7 @@ li {
 }
 
 .intro-grid,
+.section-stack,
 .two-column,
 .tool-grid {
   display: grid;

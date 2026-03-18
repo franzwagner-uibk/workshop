@@ -1,4 +1,4 @@
-const storageKey = "workshop-progress-v1";
+const storageKey = "workshop-progress-v2";
 const stepCards = Array.from(document.querySelectorAll("[data-step]"));
 const stepCheckboxes = Array.from(
   document.querySelectorAll("[data-step-checkbox]")
