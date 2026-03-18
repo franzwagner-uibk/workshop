@@ -474,6 +474,19 @@ code {
   align-self: flex-start;
 }
 
+.pad-panel {
+  display: grid;
+  gap: 16px;
+}
+
+.pad-frame {
+  width: 100%;
+  min-height: 600px;
+  border: 0;
+  border-radius: 18px;
+  background: #fffdf9;
+}
+
 .footer {
   display: flex;
   align-items: center;

@@ -23,13 +23,13 @@
           <a class="brand" href="#top">Workshop Handbook</a>
           <div class="nav-links">
             <a href="#basics">Basics</a>
+            <a href="#pad">Workshop pad</a>
             <a href="#before">Before You Start</a>
             <a href="#setup">Setup</a>
             <a href="#steps">Steps</a>
             <a href="#tools">Handy tools</a>
             <a href="#prompts">Prompts</a>
             <a href="#publish">Publish</a>
-            <a href="#help">Help</a>
           </div>
         </nav>
 
@@ -90,6 +90,33 @@
       </header>
 
       <main>
+        <section class="section" id="pad">
+          <div class="section-heading section-heading-wide">
+            <p class="section-kicker">Shared notes</p>
+            <h2>Workshop pad for prompts and quick exchanges</h2>
+            <p class="section-intro">
+              Use this shared pad when you want to exchange prompts quickly,
+              copy examples, or keep a few live workshop notes in one place.
+            </p>
+          </div>
+          <article class="panel pad-panel">
+            <p class="tip">
+              Open in a separate tab if you want more space:
+              <a href="https://yopad.eu/p/Workshop_Pad" target="_blank" rel="noreferrer">Workshop Pad</a>
+            </p>
+            <iframe
+              class="pad-frame"
+              title="Workshop Pad"
+              name="embed_readwrite"
+              src="https://yopad.eu/p/Workshop_Pad?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=false"
+              width="100%"
+              height="600"
+              frameborder="0"
+              loading="lazy"
+            ></iframe>
+          </article>
+        </section>
+
         <section class="section" id="before">
           <div class="section-heading">
             <p class="section-kicker">Before you start</p>
@@ -651,61 +678,6 @@ Check the current site for mistakes and tell me what to fix first.</code></pre>
               <li>You wait 1 to 5 minutes after publishing and test the live link on your phone.</li>
             </ol>
           </article>
-        </section>
-
-        <section class="section" id="help">
-          <div class="section-heading">
-            <p class="section-kicker">When something breaks</p>
-            <h2>Simple troubleshooting</h2>
-          </div>
-          <div class="intro-grid">
-            <article class="info-card">
-              <h3>The CSS does not load</h3>
-              <p>
-                Check the filename. It must match exactly:
-                <code>styles.css</code>. Also check that the link in your HTML
-                is correct.
-              </p>
-            </article>
-            <article class="info-card">
-              <h3>A page link does not work</h3>
-              <p>
-                Check the filename and the <code>href</code> in your navigation.
-                A link to <code>about.html</code> will only work if that file
-                really exists.
-              </p>
-            </article>
-            <article class="info-card">
-              <h3>OpenCode wants to use React</h3>
-              <p>
-                Point it back to <code>AGENTS.md</code> and remind it that this
-                workshop uses plain HTML, CSS, and JavaScript with one real
-                HTML file per page.
-              </p>
-            </article>
-            <article class="info-card">
-              <h3>Go Live works, but the public site does not change</h3>
-              <p>
-                This usually means you changed the local files but did not push
-                the new version to GitHub yet. Local preview and GitHub Pages
-                are not the same thing.
-              </p>
-            </article>
-            <article class="info-card">
-              <h3>GitHub Pages is not live yet</h3>
-              <p>
-                Wait a few minutes, then refresh the page. If it still does not
-                work, check <code>Settings → Pages</code> again.
-              </p>
-            </article>
-            <article class="info-card">
-              <h3>You feel stuck</h3>
-              <p>
-                Go back one step. Ask OpenCode to explain the current files in
-                simple words. Then make one small change, not five at once.
-              </p>
-            </article>
-          </div>
         </section>
       </main>
 
